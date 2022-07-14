@@ -10,13 +10,13 @@
   yum_repository: 
     name: jenkins 
     description: jenkins repository 
-    baseurl: http://pkg.jenkins.io/redhat 
+    baseurl: http://pkg.jenkins.io/redhat-stable
     enabled: no 
     gpgcheck: yes 
 
 - name: Install Jenkins 
   yum: 
-    name: jenkins-2.45
+    name: jenkins-stable
     enablerepo: jenkins 
     state: present 
 
